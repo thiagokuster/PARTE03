@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    background: white;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.header {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 12px;
+}
+
+.header span {
+    font-weight: 900;
+    font-size: 20px;
+    word-break: break-all;
+}
+
+.header #new {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.divTable {
+    padding: 10px;
+    width: auto;
+    height: inherit;
+    overflow: auto;
+}
+
+.divTable::-webkit-scrollbar {
+    width: 12px;
+    background-color: whitesmoke;
+}
+
+.divTable::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: darkgray;
+}
+
+table {
+    width: 100%;
+    border-spacing: 10px;
+    word-break: break-all;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: whitesmoke;
+}
+
+thead tr th.acao {
+    width: 100px !important;
+    text-align: center;
+}
+
+.modal-container {
+    width: 50%;
+    height: 60%;
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.modal label {
+    font-size: 14px;
+    width: 100%;
+}
+
+.modal input {
+    width: 100%;
+    outline: none;
+    padding: 5px 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.modal button {
+    margin: 10px auto;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 100%;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.active {
+    display: flex;
+}
+
+.active .modal {
+    animation: modal .5s;
+}
+
+td button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+td button i {
+    font-size: 25px;
+}
+
+td button i:first-child {
+    margin-right: 10px;
+}
+
+#barrapesquisar {
+    border-radius: 5px 0 0 5px;
+    align-items: left;
+    padding: 10px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+#previousPage,
+#nextPage {
+    padding: 5px 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#currentPage {
+    font-weight: bold;
+    margin-top: 5px;
+}body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.caixa{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+.azul{
+    background-color: #007BFF;
+    color: white;
+}
+#barrapesquisar{
+    flex-grow: 1;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+.divtable{
+    overflow-x: auto;
+}
+.list{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.list th,.list td{
+    padding: 10px;
+    text-align: left;
+}
+.list th{
+    background-color: #007BFF;
+    color: white;
+}
+.list tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.pagination{
+    text-align: center;
+    margin-top: 20px;
+}
+#previousPage,#nextPage{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.modal-container{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.modal{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #007BFF;
+}
+form{
+    margin-top: 20px;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="radio"] {
+    margin-right: 5px;
+}
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+.edit-btn,.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #007BFF;
+    margin-right: 5px;
+}
+#campoInfoSigilosa{
+    display: none;
+}
+.list tr.selected {
+    background-color: #f0e68c;
+}
+#previousPage:hover,#nextPage:hover{
+    background-color: #0056b3;
+}
+#previousPage:disabled,#nextPage:disabled {
+    background-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+}
+.active{
+    display: flex;
+}
+.active .modal{
+    animation: modal .5s;
+}
+h1{
+    text-align: center;
+}
+div.modal-container[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="radio"]{
+    margin-right: 5px;
+}
+#campoInfoSigilosa{
+    display: none;
+}
+div.modal-container[type="submit"]{
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.logo{
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+}
+img{
+    max-width: 25%;
+    height: auto;
+}
+@media (min-width: 768px){
+    .container {
+        width: 60%;
+    }
+}
+a{
+    font-size: 2rem;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bolder;
+    margin-left: 95%;
+}
